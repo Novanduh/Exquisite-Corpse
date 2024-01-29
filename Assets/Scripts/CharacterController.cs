@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
+
 
 public class NewBehaviourScript : MonoBehaviour
 {
@@ -33,7 +33,7 @@ public class NewBehaviourScript : MonoBehaviour
         bool grounded = IsGrounded();
         if (Input.GetKeyDown(KeyCode.Space) && grounded)
         {
-            rb.AddForce(0, 300, 0);
+            rb.AddForce(0, 450, 0);
         }
     }
 
